@@ -1,2 +1,7 @@
 # CyberOps
- This training -General Windows structure -Network Fundamentals -CyberOps contains.
+ This training
+ -General Windows structure
+ -Network Fundamentals
+ -CyberOps training
+ 
+ 
