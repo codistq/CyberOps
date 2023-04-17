@@ -1,0 +1,35 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Windows Boot Process</title>
+</head><body><span style="font-size: 15pt"><b><div style="text-align: center">Windows Boot Process</div></b></span><span style="font-size: 15pt"><hr/></span><div style="text-align: center"><img src="6.png"/></div><hr/><u><b><div style="text-align: center"><span style="font-size: 13pt">Windows nasıl başlıyor ? </span></div></b></u><br/>
+<br/>
+<span style="font-size: 12pt">Windows başlatılırken ilk olarak eş zamanlı başlatılan iki tane teknoloji var ; birisi daha üstün bir teknoloji ama büyük ihtimalle kardırılacak diğeri daha yeni<br/>
+amaçları ise bilgisiyarını çalıştırmak. Yani bilgisayarınızın tüm donanım kaynaklarını başlatma işlemlerini yapar.<br/>
+<br/>
+Eğer cihazın <b>BıOS</b>'u var ise;<ul><li><b>MBR adımı</b>: işletim sistemini bulup yüklemekle görevli.</li>
+<li><b>POST adımı </b>: Cihaz açılırken tüm donanımların testlerini yapar. </li>
+<li><b>Bootmgr.exe adımı</b>: Windows işletim sisteminin açılışını yöneten bir dosyadır. Bu dosya, bilgisayarınızın önyükleme işlemi sırasında, işletim sistemini yüklemek ve çalıştırmak için gerekli olan işlemleri gerçekleştirir.</li>
+</ul>
+<br/>
+<b>BıOS ve UEFı ortak adımları devamı</b><ul><li><b>BCD adımı</b>: veritabanını okumak ve buna göre bilgisayarı başlatmakla görevlidir. iki farklı adımı vardır;</li>
+<li style="list-style-type: none"><ul><span style="color: #007f00"><li style="list-style-type: none">1.--&gt;<b>Hibernation?Yes adımı</b>: Hazırda beklet olarak kapatıldıysa eğer BCD de bunun bulgusu var ve giderek Hiberfil.sys dosyasını çalıştırır.O dosyayı okur ve login 			ekranına geçer.</li>
+<li style="list-style-type: none"/>
+</span><li style="list-style-type: none"><span style="color: #007f00">2.--&gt;<b>Winload.exe adımı</b>: Eğer bilgisayarınız normal kapatıldıysa bu açamaya geçer. </span></li>
+<span style="color: #000000"><li style="list-style-type: none">	</li>
+</span><li style="list-style-type: none"><ul><span style="color: #000000"><li><b>KMCS adımı </b>: Sürücülerin imzalanıp imzalanmadığını kontrol eder.</li>
+<li><b>Ntoskml.exe adımı </b>: Windowsun işletim sistemi çekirdeği burada çalıştırılır.</li>
+<li><b>HAL adımı</b>: Hardware Abstraction Layer kısmını çalıştırır.</li>
+<li><b>SMSS adımı</b>: Session manager adımı oturum yöneticisini çalıştırır ve kullanıcı ortamını oluşturur</li>
+</span></ul>
+</li>
+</ul>
+</li>
+</ul>
+</span><ul><li style="list-style-type: none"><ul><span style="color: #000000"><li style="list-style-type: none"/>
+</span><li style="list-style-type: none"/>
+</ul>
+</li>
+</ul>
+<br/>
+</body></html>
